@@ -340,7 +340,7 @@ code{font-family:monospace;background:#f0f0ea;padding:1px 6px;border-radius:3px;
     <g class="nd"><rect x="20" y="920" width="100" height="44" rx="8" fill="#F1EFE8" stroke="#888780" stroke-width="1"/><text x="70" y="942" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#444441">Sale complete</text></g>
     <line x1="340" y1="978" x2="340" y2="1004" stroke="#BA7517" stroke-width="1" marker-end="url(#a1)"/>
     <text x="352" y="994" font-size="11" fill="#854F0B">Yes</text>
-    <g class="nd"><rect x="190" y="1004" width="300" height="68" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="1"/><text x="340" y="1026" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#633806">9. Create Customer Product + AMC</text><text x="340" y="1044" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#854F0B">Type: Paid / Complementary / Deferred</text><text x="340" y="1060" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#854F0B">Start date · Expiry = Start + 365 days</text></g>
+    <g class="nd"><rect x="190" y="1004" width="300" height="68" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="1"/><text x="340" y="1026" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#633806">9. Create Customer Product + AMC</text><text x="340" y="1044" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#854F0B">Type: Paid / Complementary / Introductory AMC Offer</text><text x="340" y="1060" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#854F0B">Start date · Expiry = Start + 365 days</text></g>
     <line x1="340" y1="1072" x2="340" y2="1098" stroke="#888" stroke-width="1" marker-end="url(#a1)"/>
     <g class="nd"><rect x="200" y="1098" width="280" height="52" rx="8" fill="#FAEEDA" stroke="#BA7517" stroke-width="1.5"/><text x="340" y="1118" text-anchor="middle" dominant-baseline="central" font-size="13" font-weight="500" fill="#633806">AMC Active — Service Period</text><text x="340" y="1136" text-anchor="middle" dominant-baseline="central" font-size="11" fill="#854F0B">No sales push — await renewal reminders</text></g>
     <line x1="340" y1="1150" x2="340" y2="1176" stroke="#888" stroke-width="1" marker-end="url(#a1)"/>
@@ -469,9 +469,9 @@ code{font-family:monospace;background:#f0f0ea;padding:1px 6px;border-radius:3px;
     <line x1="340" y1="464" x2="340" y2="490" stroke="#888" stroke-width="1" marker-end="url(#a4)"/>
     <polygon points="340,490 460,528 340,566 220,528" fill="#F1EFE8" stroke="#BA7517" stroke-width="1.5"/>
     <text x="340" y="524" text-anchor="middle" dominant-baseline="central" font-size="12" font-weight="500" fill="#633806">AMC Type?</text>
-    <text x="340" y="540" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#854F0B">Paid / Complementary / Deferred</text>
+    <text x="340" y="540" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#854F0B">Paid / Complementary / Introductory AMC Offer</text>
     <line x1="220" y1="528" x2="120" y2="528" stroke="#185FA5" stroke-width="1" marker-end="url(#a4)"/>
-    <text x="173" y="520" text-anchor="middle" font-size="11" fill="#185FA5">Deferred</text>
+    <text x="173" y="520" text-anchor="middle" font-size="11" fill="#185FA5">Introductory AMC Offer</text>
     <g class="nd"><rect x="20" y="506" width="100" height="44" rx="8" fill="#E6F1FB" stroke="#378ADD" stroke-width="1"/><text x="70" y="524" text-anchor="middle" dominant-baseline="central" font-size="11" font-weight="500" fill="#0C447C">Start = Inv+1yr</text><text x="70" y="540" text-anchor="middle" dominant-baseline="central" font-size="10" fill="#185FA5">Expiry = +1yr</text></g>
     <line x1="70" y1="550" x2="70" y2="620" stroke="#185FA5" stroke-width="0.8" marker-end="url(#a4)"/>
     <line x1="70" y1="620" x2="210" y2="620" stroke="#185FA5" stroke-width="0.8" marker-end="url(#a4)"/>
@@ -741,7 +741,7 @@ code{font-family:monospace;background:#f0f0ea;padding:1px 6px;border-radius:3px;
       <p>Record Payment Entry when payment received. Then submit Sales Invoice as the official tax invoice.</p>
     </div>
     <div class="step-card"><div class="step-header"><span class="step-num">8</span><span class="step-title">Create Customer Product + AMC (if applicable)</span></div>
-      <p>If product is AMC-eligible: Create Customer Product record, then create AMC. Set Type (Paid / Complementary / Deferred), Start Date, Expiry = Start + 365 days.</p>
+      <p>If product is AMC-eligible: Create Customer Product record, then create AMC. Set Type (Paid / Complementary / Introductory AMC Offer), Start Date, Expiry = Start + 365 days.</p>
     </div>
   </div>
 
@@ -757,7 +757,7 @@ code{font-family:monospace;background:#f0f0ea;padding:1px 6px;border-radius:3px;
       <p>Raise Sales Invoice. Record Payment Entry when payment is received.</p>
     </div>
     <div class="step-card"><div class="step-header"><span class="step-num">4</span><span class="step-title">Create AMC</span></div>
-      <p>Select AMC Type. For <strong>Deferred</strong>: Start = Invoice date + 1 year. For <strong>Paid / Complementary</strong>: Start = Invoice date + 1 day. Expiry = Start + 365 days.</p>
+      <p>Select AMC Type. For <strong>Introductory AMC Offer</strong>: Start = Invoice date + 1 year. For <strong>Paid / Complementary</strong>: Start = Invoice date + 1 day. Expiry = Start + 365 days.</p>
     </div>
   </div>
 
@@ -787,7 +787,7 @@ code{font-family:monospace;background:#f0f0ea;padding:1px 6px;border-radius:3px;
     <div class="grid2">
       <div>
         <div class="rule-block amber"><strong>Paid / Complementary AMC</strong>Start Date = Invoice Date + 1 day<br>Expiry = Start Date + 365 days</div>
-        <div class="rule-block"><strong>Deferred AMC</strong>Start Date = Invoice Date + 1 year<br>Expiry = Start Date + 365 days</div>
+        <div class="rule-block"><strong>Introductory AMC Offer AMC</strong>Start Date = Invoice Date + 1 year<br>Expiry = Start Date + 365 days</div>
       </div>
       <div>
         <div class="rule-block green"><strong>On Renewal</strong>New Start = Old Expiry + 1 day<br>New Expiry = New Start + 365 days</div>
@@ -847,7 +847,7 @@ code{font-family:monospace;background:#f0f0ea;padding:1px 6px;border-radius:3px;
       <tr><td><span class="badge b-teal">Active</span></td><td>AMC valid, within dates</td><td>✅ Accepted</td><td>None — service as normal</td></tr>
       <tr><td><span class="badge b-red">Expired</span></td><td>Past expiry date, not renewed</td><td>⏸ Paused</td><td>Trigger renewal flow</td></tr>
       <tr><td><span class="badge b-gray">Lapsed</span></td><td>Expired 90+ days, no renewal</td><td>🚫 Blocked</td><td>Manual re-activation + fee</td></tr>
-      <tr><td><span class="badge b-blue">Deferred</span></td><td>Start date in future</td><td>Per agreement</td><td>Awaiting start date</td></tr>
+      <tr><td><span class="badge b-blue">Introductory AMC Offer</span></td><td>Start date in future</td><td>Per agreement</td><td>Awaiting start date</td></tr>
       <tr><td><span class="badge b-amber">Complementary</span></td><td>Free AMC (bundled)</td><td>✅ Accepted</td><td>None — renew when due</td></tr>
     </table>
   </div>
@@ -951,7 +951,7 @@ code{font-family:monospace;background:#f0f0ea;padding:1px 6px;border-radius:3px;
           <tr><th>AMC Type</th><th>Start Date</th><th>Expiry Date</th></tr>
           <tr><td>Paid</td><td>Invoice Date + 1 day</td><td>Start + 365 days</td></tr>
           <tr><td>Complementary</td><td>Invoice Date + 1 day</td><td>Start + 365 days</td></tr>
-          <tr><td>Deferred</td><td>Invoice Date + 1 year</td><td>Start + 365 days</td></tr>
+          <tr><td>Introductory AMC Offer</td><td>Invoice Date + 1 year</td><td>Start + 365 days</td></tr>
           <tr><td>Renewal</td><td>Old Expiry + 1 day</td><td>New Start + 365 days</td></tr>
         </table>
       </div>
